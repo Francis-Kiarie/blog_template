@@ -76,7 +76,19 @@ body.light-theme{
 }
 
 /* Reusable classes */
-
+.container{
+    max-width: 160rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+.place-items-center{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+.screen-sm-hidden{
+    display: none;
+}
 /* Header */
 
 /* Header JavaScript Styles */

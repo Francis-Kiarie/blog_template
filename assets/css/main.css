@@ -90,7 +90,66 @@ body.light-theme{
     display: none;
 }
 /* Header */
-
+.header{
+    background-color: var(--secondary-background-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 1.5rem;
+}
+.logo{
+    font-size: var(--font-size-md);
+    color: var(--light-color);
+}
+.menu{
+    position:absolute;
+    top:8.5rem;
+    right:1.5rem;
+    width: 23rem;
+    padding:1.5rem;
+    background-color: var(--secondary-background-color);
+    /* opacity: 0;
+    transform: scale(0); */
+    transition: opacitiy .25s, ease-in;
+    }
+.list{
+    display: flex;
+    align-items: center;
+    gap: var(--gap);
+}
+.menu > .list{
+    flex-direction: column;
+}
+.list-link.current{
+    color: var(--light-color);
+}
+.close-menu-icon{
+    display: none;
+}
+.btn{
+    cursor: pointer;
+}
+.list-link:hover,
+.btn:hover,
+.btn:hover span{
+    color: var(--light-color);
+}
+.moon-icon{
+    display: none;
+}
+.light-theme .sun-icon{
+    display: block;
+}
+.light-theme .moon-icon{
+    display: block;
+}
 /* Header JavaScript Styles */
 
 /* Search */

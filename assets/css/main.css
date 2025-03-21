@@ -115,8 +115,8 @@ body.light-theme{
     width: 23rem;
     padding:1.5rem;
     background-color: var(--secondary-background-color);
-    /* opacity: 0;
-    transform: scale(0); */
+    opacity: 0;
+    transform: scale(0);
     transition: opacitiy .25s, ease-in;
     }
 .list{
@@ -151,7 +151,20 @@ body.light-theme{
     display: block;
 }
 /* Header JavaScript Styles */
-
+.header.activated{
+    box-shadow: 0 1px .5rem var(--transparent-light-color);
+}
+.menu.activated{
+    box-shadow: 1px 1px 1rem var(--transparent-light-color);
+    opacity: 1;
+    transform: scale(1);
+}
+.menu-toggle-icon .open-menu-icon{
+    display: none;
+}
+.menu-toggle-icon .close-menu-icon{
+    display: block;
+}
 /* Search */
 
 /* Form JavaScript styles */

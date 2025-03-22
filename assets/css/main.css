@@ -145,7 +145,7 @@ body.light-theme{
     display: none;
 }
 .light-theme .sun-icon{
-    display: block;
+    display: none;
 }
 .light-theme .moon-icon{
     display: block;

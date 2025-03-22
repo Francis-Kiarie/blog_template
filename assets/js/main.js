@@ -15,7 +15,14 @@ const scrolHeader = () =>{
 }
 window.addEventListener('scroll', scrolHeader);
 // Open menu & search pop-up
+const menuToggleIcon = selectElement('#menu-toggle-icon');
+const toggleMenu = () => {
+    const mobileMenu = selectElement('#menu');
+    mobileMenu.classList.toggle('activated');
+    menuToggleIcon.classList.toggle('activated');
 
+};
+menuToggleIcon.addEventListener('click', toggleMenu);
 // Open/Close search form popup
 
 // -- Close the search form popup on ESC keypress
